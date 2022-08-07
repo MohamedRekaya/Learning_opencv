@@ -38,7 +38,7 @@ def rotation(img, deg, center, direction="COUNTERCLOCKWISE"):
     rot_mat = np.array([[np.cos(rad), np.sin(rad)], [-np.sin(rad), np.cos(rad)]])
     
     if (direction=="CLOCKWISE"):
-        rot_mat = np.array([[np.cos(rad), -np.sin(rad)], [np.sin(rad), np.cos(rad)]])
+        rot_mat = np.array([[np.cos(rad), np.sin(rad)], [-np.sin(rad), np.cos(rad)]])
         
     for i in range(img.shape[0]):
         for j in range(img.shape[1]):
@@ -90,3 +90,30 @@ cv.imshow("flipped", rotated)
 
 
 cv.waitKey(0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
